@@ -1,3 +1,4 @@
+import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 /**
@@ -11,7 +12,7 @@ public class Calculator {
    */
   public static void main(String[] args) {
     System.out.println("Enter first and second number:");
-    Scanner input = new Scanner(System.in);
+    Scanner input = new Scanner(System.in, StandardCharsets.UTF_8);
 
     int num1 = input.nextInt();
     int num2 = input.nextInt();
@@ -40,39 +41,35 @@ public class Calculator {
   }
 
   /**
-   * Method for addition
+   * Method for addition.
    *
    * @param x first parameter
    * @param y second parameter
    * @return result of addition operation with two parameters
    */
   public static int add(int x, int y) {
-    int result = x + y;
-    return result;
+    return x + y;
   }
 
   /**
-   * Method for subtraction
+   * Method for subtraction.
    */
   public static int sub(int x, int y) {
-    int result = x - y;
-    return result;
+    return x - y;
   }
 
   /**
-   * Method for multiplication
+   * Method for multiplication.
    */
   public static int multiply(int x, int y) {
-    int result = x * y;
-    return result;
+    return x * y;
   }
 
   /**
-   * Method for division
+   * Method for division.
    */
   public static int divideNumbers(int x, int y) {
-    int result = x / y;
-    return result;
+    return x / y;
   }
 
 }
